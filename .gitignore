@@ -1,0 +1,16 @@
+# Private research corpus / raw imported materials
+raw/
+
+# WorkBuddy internal state and local memories
+.workbuddy/memory/
+
+# Local test artifacts
+*.py
+*_result.txt
+test_result.txt
+
+# Generated reusable analysis reports
+result/
+
+# Historical one-off reports (keep locally; do not publish by default)
+*_打分报告_*.md
