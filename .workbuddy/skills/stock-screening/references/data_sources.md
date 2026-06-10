@@ -79,7 +79,41 @@ westock-data kline usHSAI --period day --limit 800
 
 ---
 
-## 4. 财务报表
+## 4. 技术指标
+
+```bash
+westock-data technical sh688213 --group all
+```
+
+**用途**：
+- 获取 MACD、KDJ、RSI、布林带、均线系统
+
+---
+
+## 5. 资金流向
+
+```bash
+westock-data asfund sh688213 
+westock-data hkfund hk00700
+```
+
+**用途**：
+- 资金流向主要用于判断主力是在进场还是出货，对于短线操作很有参考价值。
+
+---
+
+## 6. 当前热搜股票（市场关注度指标）
+
+```bash
+westock-data hot stock
+```
+
+**用途**：
+- 查看市场当前热点股票，短线可供参考，越热越代表资金面/消息面活跃。
+
+---
+
+## 7. 财务报表
 
 A 股：
 
@@ -113,7 +147,7 @@ westock-data finance usHSAI --type cashflow --num 4
 
 ---
 
-## 5. 公司简况与业务描述
+## 8. 公司简况与业务描述
 
 ```bash
 westock-data profile sh688213
@@ -131,7 +165,7 @@ westock-data profile usHSAI
 
 ---
 
-## 6. 公告列表与公告全文
+## 9. 公告列表与公告全文
 
 公告列表：
 
@@ -154,7 +188,7 @@ westock-data ncontent nos1225047323
 
 ---
 
-## 7. 风险事件
+## 10. 风险事件
 
 ```bash
 westock-data risk sh688213
@@ -175,7 +209,7 @@ westock-data risk sz300750 --types pledge,unlock,lawsuit,st,addition
 
 ---
 
-## 8. 一致预期
+## 11. 一致预期
 
 ```bash
 westock-data consensus sh688213
@@ -191,7 +225,7 @@ westock-data consensus sh688213
 
 ---
 
-## 9. 股东结构
+## 12. 股东结构
 
 ```bash
 westock-data shareholder sh688213
@@ -206,7 +240,7 @@ westock-data shareholder hk00700
 
 ---
 
-## 10. 新闻、研报、评级
+## 13. 新闻、研报、评级
 
 ```bash
 westock-data news sh688213 --limit 20 --type 3
@@ -222,7 +256,7 @@ westock-data newsdetail <news_id>
 
 ---
 
-## 11. 板块与概念成份股
+## 14. 板块与概念成份股
 
 搜索板块：
 
@@ -245,7 +279,7 @@ westock-data sector <板块代码>
 
 ---
 
-## 12. 市场环境与流动性
+## 15. 市场环境与流动性
 
 指数行情：
 
@@ -276,7 +310,7 @@ westock-data hot board --limit 10
 
 ---
 
-## 13. 年报“经营计划 / 未来展望”抓取
+## 16. 年报“经营计划 / 未来展望”抓取
 
 内置股票数据可以给公告列表和 PDF 链接，但不一定直接给年报正文。
 
@@ -290,7 +324,7 @@ westock-data hot board --limit 10
 
 ---
 
-## 14. 数据源信任分级
+## 17. 数据源信任分级
 
 | 信息源 | 可信度 | 用法 |
 |---|---|---|
@@ -305,7 +339,7 @@ westock-data hot board --limit 10
 
 ---
 
-## 15. 已验证结论
+## 18. 已验证结论
 
 2026-06-04 实测通过：
 
